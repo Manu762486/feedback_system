@@ -253,4 +253,4 @@ def display():
         return render_template('feedbacks.html', tables=[df.to_html(classes='data', header="true")])
 
 
- app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+app.run(port=5978, host='0.0.0.0', debug=True)
